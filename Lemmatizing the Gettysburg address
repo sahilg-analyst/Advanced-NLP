@@ -1,0 +1,15 @@
+import spacy
+
+# Load the en_core_web_sm model
+nlp = spacy.load('en_core_web_sm')
+
+# Create a Doc object
+doc = nlp(gettysburg)
+
+# Generate lemmas
+lemmas = [token.lemma_ for token in doc]
+
+# Convert lemmas into a string
+print(' '.join(lemmas))
+
+##Observe the lemmatized version of the speech. It isn't very readable to humans but it is in a much more convenient format for a machine to process.

@@ -13,3 +13,5 @@ def preprocess(text):
 # Apply preprocess to ted['transcript']
 ted['transcript'] = ted['transcript'].apply(preprocess)
 print(ted['transcript'])
+
+## have preprocessed all the TED talk transcripts contained in ted and it is now in a good shape to perform operations such as vectorization (as we will soon see how).
